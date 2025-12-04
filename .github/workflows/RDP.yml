@@ -1,4 +1,4 @@
-name: WIN
+name: RDP
 
 on:
   workflow_dispatch:
