@@ -32,7 +32,7 @@ jobs:
 
       - name: Create RDP User with Fixed Password
         run: |
-          $password = "RDP"   # ← OVDE PROMENI LOZINKU
+          $password = "blagii"   # ← OVDE PROMENI LOZINKU
           $securePass = ConvertTo-SecureString $password -AsPlainText -Force
           
           # Delete if exists (avoids error)
@@ -99,7 +99,7 @@ jobs:
           Write-Host "`n=== RDP ACCESS ==="
           Write-Host "Address: $env:TAILSCALE_IP"
           Write-Host "Username: RDP"
-          Write-Host "Password: RDP"   # ← ista lozinka
+          Write-Host "Password: blagii"   # ← ista lozinka
           Write-Host "==================`n"
           
           while ($true) {
